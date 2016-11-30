@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+<link href="" rel="stylesheet">
+<style>
+    *{
+        padding:0;
+        margin:0;
+        list-style:none;
+
+    }
+    .head{
+        width:16rem;
+        height:2.5rem;
+        background:-webkit-linear-gradient(#ffffff,#ebebeb) ;
+        position:relative;
+    }
+    .head a{
+        width:3rem;
+        height: 1.4rem;
+        background:url(img/return.png) no-repeat;
+        background-size:100%;
+        display:block;
+        position:absolute;
+        top:0.5rem;
+        left:0.5rem;
+        text-indent:-9999em;
+    }
+    .head h1{
+        width:3.75rem;
+        height:1rem;
+        background:url(img/ju.png) ;
+        background-size:100%;
+        position:absolute;
+        left:6.5rem;
+        top:0.75rem;
+    }
+    .an{
+        overflow:hidden;
+    }
+    .an .tab{
+        width:700%;
+        overflow:hidden;
+        -webkit-transform:translateX(-16rem);
+    }
+    .an .tab li{
+        float:left;
+        width:calc(100%/7);
+    }
+    .an img{
+        width:16rem;
+        height:6.7rem;
+    }
+    .ul1{
+        display:-webkit-box;
+        -webkit-box-pack:center;
+    }
+     .ul1 li{
+        width:0.25rem;
+        height:0.25em;
+        background:#a9a9a9;
+        border-radius:50%;
+        margin-left:0.25rem;
+     }
+     .active{
+        background:red !important;
+     }
+    .tp{
+        width:2rem;
+        height:2rem;
+        display:inline-block;
+        background-size:100%;
+    background-repeat: no-repeat;
+    }
+    .t1{
+        background-image:url(img/t1.png);
+    }
+    .t2{
+        background-image:url(img/t2.png);
+    }
+    .t3{
+        background-image:url(img/t3.png);
+    }
+    .t4{
+        background-image:url(img/t4.png);
+    }
+    .t5{
+        background-image:url(img/t5.png);
+    }
+    .t6{
+        background-image:url(img/t6.png);
+    }
+    .t7{
+        background-image:url(img/t7.png);
+    }
+    .t8{
+        background-image:url(img/t8.png);
+    }
+    
+
+    .ul2 p{
+        font-size:0.6rem;
+    }
+    .ul2 p a{
+        color:#999999;
+        text-decoration:none;
+    }
+    .ul2{
+        overflow:hidden;
+        margin:0 0.4rem;
+    }
+    .ul2 li{
+    width:25%;
+    float:left;
+    text-align:center;
+    margin-top:1rem;
+    }
+    .pos{
+        position:relative;
+    }
+    .ul2 p .dian{
+        width:0.25rem;
+        height:0.25rem;
+        border-radius:50%;
+        background:red;
+        position:absolute;
+        left:1rem;
+        top:0.2rem;
+    }
+    section{
+        width:15rem;
+        margin-left:0.5rem;
+        margin-top:1.6rem;
+        overflow:hidden;
+    }
+    section .l{
+        border-left:0.1rem solid red;
+        padding-left:0.45rem;
+        font-size:0.6rem;
+        float:left;
+        font-weight:bold;
+    }
+    section .r{
+        float:right;
+        font-size:0.7rem;
+        font-weight:bold;
+    }
+    section div:nth-child(1){
+        height:0.75rem;
+    }
+    section h1{
+        border-bottom:0.1rem solid #dcdcdc;
+        height:0.5rem;
+        margin-bottom: 0.8rem;
+    }
+    section ul li{
+        width:15rem;
+        height:3rem;
+        overflow:hidden;
+        margin-top:0.5rem;
+    }
+
+    section .number{
+        height:3rem;
+        width:1.5rem;
+        display:block;
+        line-height: 3rem;
+        background:red;
+        color:#fff;
+        text-align: center;
+        font-size:1.2rem;
+        float:left;
+    }
+    section li .li1{
+        background:#ff4800;
+    }
+    section li .li2{
+        background:#ff7300;
+    }
+    section li .li3{
+        background:#ffa800;
+    }
+    section li .li4{
+        background:#ff9d00;
+    }
+    section li .li5{
+        background:#ffb400;
+    }
+    section li .li6{
+        background:#ffba00;
+    }
+    section li .li7{
+        background:#fcd000;
+    }
+    section li .li8{
+        background:#ffd719;
+    }
+    section li .li9{
+        background:#ffe152;
+    }
+    ul li div{
+        width:4.5rem;
+        height:3rem;
+        float:left;
+
+    }
+    ul li div img{
+        width:4.5rem;
+        height:3rem;
+    }
+    ul li .rmb{
+        width:9rem;
+        height:3rem;
+        float:left;
+        background:url(img/you.png) no-repeat  8.2rem center #f4f4f4;
+        color:#999999;
+        font-size:0.6rem;
+
+    }
+    section ul li .rmb .p1{
+        margin-top:0.7rem;
+        margin-left:0.55rem;
+        width:4.25rem;
+        display:inline-block;
+    }
+     section ul li .rmb .p2{
+        margin-left:0.55rem;
+        margin-top:0.3rem;
+        width:4.25rem;
+        display:inline-block;
+    }
+    section ul li .sp1{
+        color:red;
+
+    }
+    section ul li .sp2{
+        text-decoration:line-through;
+    }
+    section ul li .my{
+        display:inline-block;
+        font-size:0.875rem;
+        color:red;
+        font-weight: bold;
+        margin-top:1rem;
+        float:right;
+        margin-right:1.2rem;
+    }
+    section h3 {
+        height:1.7rem;
+        width:15rem;
+        display:block;
+        background:#f5f5f5;
+        font-size:0.8rem;
+        line-height: 1.7rem;
+        text-align: center;
+        margin:0.5rem 0;
+        color:#666666;
+    }
+    section .sht{
+        width:15rem;
+        height:8.8rem;
+        overflow:hidden;
+    }
+    section .sht .le{
+        width:3.75rem;
+        height:8.8rem;
+        float:left;
+    }
+    section .sht .le img{
+        width:3.75rem;
+        height:8.8rem;
+    }
+    section .sht .ri{
+        width:11.25rem;
+        height:8.8rem;
+        border-bottom:1px solid #eeeeee;
+        float:left;
+        box-sizing:border-box;
+    }
+    section .sht .ri .px{
+        box-sizing:border-box;
+        border-left:1px solid #eeeeee;
+    }
+    section .sht .ri li{
+        margin-top:0;
+        width:3.75rem;
+        height:2.2rem;
+        float:left;
+        border-top:1px solid #eeeeee;
+        border-right:1px solid #eeeeee;
+        box-sizing:border-box;
+    }
+    section .sht .ri li a{
+        color:#999;
+        width:3.75rem;
+        height:2.2rem;
+        display:block;
+        font-size:0.7rem;
+        text-decoration:none;
+        text-align:center;
+        line-height: 2.2rem;
+    }
+    section .sht .ri li a:hover{
+        color:red;
+    }
+    section .bj{
+        background: #f5f5f5;
+        position:relative;
+        
+    }
+    section .bj span{
+        width:0.3rem;
+        height:0.6rem;
+        display:block;
+        background:url(img/you.png) no-repeat;
+        background-size:100%;
+        position:absolute;
+        right:0.5rem;
+        top:0.55rem;
+    }
+    section .ios{
+        width:15rem;
+        height:4rem;
+        overflow:hidden;
+    }
+    section .ios li{
+        float:left;
+        width:5rem;
+        height:4rem;
+    }
+    section .ios li img{
+        width:5rem;
+        height:4rem; 
+    }
+    footer ul{
+        margin-top:0.45rem;
+        width:16rem;
+        height:2.2rem;
+        background:#f8f8f8;
+        overflow:hidden;
+        font-weight:bold;
+    }
+    footer ul li{
+        float:left;
+        margin-top:0.8rem;
+        font-size:0.7rem;
+        margin-left:0.75rem;
+    }
+    footer ul li a{
+        text-decoration:none;
+        color:#333333;
+    }
+    footer .last1{
+        margin-left:1.15rem;
+    }
+    footer .last{
+        float:right;
+        float:right;
+    }
+    footer .last2 a{
+        width:0.5rem;
+        height:0.25rem;
+        background:url(img/top.png) no-repeat center center;
+        background-size:100%;
+        display:block;
+        margin-right:0.7rem;
+        margin-top:0.3rem;
+    }
+    footer div{
+        width:16rem;
+        height:8.55rem;
+        background:#eeeeee;
+        padding-top:1.05rem;
+    }
+    footer div .one  {
+        text-decoration: none;
+        font-size:0.8rem;
+        margin-left:5.6rem;
+    }
+     footer div .one a{
+        text-decoration: none;
+        color:#333333;
+          font-weight:bold;
+     }
+     footer div .two{
+        color:#999;
+        font-size:0.55rem;
+        margin-left:3.8rem;
+        margin-top:0.75rem;
+     }
+</style>
+<script>
+    (function(win,doc){
+        function change(){
+            doc.documentElement.style.fontSize=doc.documentElement.clientWidth*20/320+'px';
+        }   
+        change();
+        win.addEventListener('resize',change,false);
+    })(window,document)
+    document.addEventListener('DOMContentLoaded',function(){
+            var oUl = document.querySelector('#pic');
+            var aLi = oUl.children;
+            var iNow=1;
+            var x=-aLi[0].offsetWidth;
+            var bok =true;
+            oUl.addEventListener('touchstart',function(ev){
+                if(!bok){return};
+                bok=false;
+                oUl.style.WebkitTransition='none';
+                var downX = ev.targetTouches[0].clientX
+                var disX= downX-x;
+                document.addEventListener('touchmove',move,false)
+                document.addEventListener('touchend',end,false)
+                function move(ev){
+                    x= ev.targetTouches[0].clientX-disX;
+                    oUl.style.WebkitTransform='translate3d('+x+'px,0,0)'
+                }
+                function end(ev){
+                    document.removeEventListener('touchmove', move, false)
+                    document.removeEventListener('touchend', end, false);
+                    oUl.style.WebkitTransition='0.3s';
+                    var upX=ev.changedTouches[0].clientX;
+                    var cw=Math.abs(upX-downX);
+                    if(cw>50){
+                        if(downX>upX){
+                            iNow++;
+                           
+                        }else{
+                            iNow--;
+                        }
+
+                        x=-iNow*aLi[0].offsetWidth;
+                        oUl.style.WebkitTransform='translate3d('+x+'px,0,0)'
+                    }else{
+                         
+                        x=-iNow*aLi[0].offsetWidth;
+                        oUl.style.WebkitTransform='translate3d('+x+'px,0,0)'
+                    }
+                    
+                }
+                ev.preventDefault();
+            },false)
+            oUl.addEventListener('transitionend', function(){
+                bok=true;
+                if(iNow==aLi.length-1){
+                    oUl.style.WebkitTransition='none';
+                    iNow=1;
+                    x=-iNow*aLi[0].offsetWidth;
+                        oUl.style.WebkitTransform='translate3d('+x+'px,0,0)'
+                };
+                if(iNow==0){
+                    oUl.style.WebkitTransition='none';
+                    iNow=aLi.length-2;
+                    x=-iNow*aLi[0].offsetWidth;
+                    oUl.style.WebkitTransform='translate3d('+x+'px,0,0)'
+                }
+            }, false)
+    },false)
+</script>
+</head>
+<body>
+    <header class="head">
+      <a href="javascript:;">返回</a>
+      <h1></h1> 
+    </header>
+    <div class="an">
+        <ul class="tab" id="pic">
+              <li><img src="img/5.jpg" alt=""></li>   
+              <li><img src="img/1.png" alt=""></li>
+              <li><img src="img/2.jpg" alt=""></li>
+              <li><img src="img/3.jpg" alt=""></li>
+              <li><img src="img/4.jpg" alt=""></li>
+              <li><img src="img/5.jpg" alt=""></li>
+              <li><img src="img/1.png" alt=""></li>
+          </ul>  
+    </div>  
+    <ul class="ul1">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="ul2">
+        <li>
+            <a href="#" class="tp t1"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t2"></a>
+            <p><a href="#">生活</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t3"></a>
+            <p><a href="#">品牌</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t4"></a>
+            <p><a href="#">聚宝盆</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t5"></a>
+            <p><a href="#">聚名牌</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t6"></a>
+            <p><a href="#">聚家装</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t7"></a>
+            <p class="pos"><span class="dian"></span><a href="#">剧透</a></p>
+        </li>
+        <li>
+            <a href="#" class="tp t8"></a>
+            <p><a href="#">客户端</a></p>
+        </li>
+    </ul>
+    <!-- 内容 -->
+    <section>
+        <div>
+            <span class="l">聚划算热卖排行</span>
+            <span class="r">TOP10</span>
+        </div>
+        <h1></h1>
+        <ul>
+            <li>
+                <span class="number">1</span>
+                <div class="img1">
+                    <img src="img/n1.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li1">2</span>
+                <div class="img1">
+                    <img src="img/n2.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+
+            <li>
+                <span class="number li2">3</span>
+                <div class="img1">
+                    <img src="img/n3.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li3">4</span>
+                <div class="img1">
+                    <img src="img/n4.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li4">5</span>
+                <div class="img1">
+                    <img src="img/n5.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li5">6</span>
+                <div class="img1">
+                    <img src="img/n6.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li6">7</span>
+                <div class="img1">
+                    <img src="img/n7.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li7">8</span>
+                <div class="img1">
+                    <img src="img/n8.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li8">9</span>
+                <div class="img1">
+                    <img src="img/n9.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+            <li>
+                <span class="number li9">10</span>
+                <div class="img1">
+                    <img src="img/n10.png" alt="" />
+                </div>
+                <div class="rmb">
+                <div>
+                    <p class="p1">已售 68423</p>
+                    <p class="p2"><span class="sp1">2.3</span>折 ￥<span class="sp2">299</span></p>
+                </div>
+                    <p class="my">￥51</p>
+                </div>
+            </li>
+        </ul>
+        <h3>更多划算 逛起来！</h3>                                                         
+        <div class="sht">
+            <div class="le">
+                <img src="img/s1.png" alt="">
+            </div> 
+            <ul class="ri">
+                <li class="px"><a href="#">服饰</a></li>
+                <li><a href="#">配饰</a></li>
+                <li><a href="#">美妆</a></li>
+                <li class="px"><a href="#">鞋包</a></li>
+                <li><a href="#">食品</a></li>
+                <li><a href="#">家具</a></li>
+                <li class="px"><a href="#">运动</a></li>
+                <li><a href="#">电器</a></li>
+                <li><a href="#">百货</a></li>
+                <li class="px"><a href="#">母婴</a></li>
+                <li><a href="#">数码</a></li>
+                <li><a href="#">更多</a></li>
+            </ul>                                  
+        </div>
+        <h3 class="bj">精彩商品 逛起来！<span></span></h3>  
+         <div class="sht">
+            <div class="le">
+                <img src="img/s2.png" alt="">
+            </div> 
+            <ul class="ri">
+                <li class="px"><a href="#">服饰</a></li>
+                <li><a href="#">配饰</a></li>
+                <li><a href="#">美妆</a></li>
+                <li class="px"><a href="#">鞋包</a></li>
+                <li><a href="#">食品</a></li>
+                <li><a href="#">家具</a></li>
+                <li class="px"><a href="#">运动</a></li>
+                <li><a href="#">电器</a></li>
+                <li><a href="#">百货</a></li>
+                <li class="px"><a href="#">母婴</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>                                  
+        </div>
+        <h3 class="bj">品质生活 逛起来！<span></span></h3>  
+        <div class="sht">
+            <div class="le">
+                <img src="img/s3.png" alt="">
+            </div> 
+            <ul class="ri">
+                <li class="px"><a href="#">服饰</a></li>
+                <li><a href="#">配饰</a></li>
+                <li><a href="#">美妆</a></li>
+                <li class="px"><a href="#">鞋包</a></li>
+                <li><a href="#">食品</a></li>
+                <li><a href="#">家具</a></li>
+                <li class="px"><a href="#">运动</a></li>
+                <li><a href="#">电器</a></li>
+                <li><a href="#">百货</a></li>
+                <li class="px"><a href="#">母婴</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>                                  
+        </div>  
+        <h3 class="bj">品牌折扣 逛起来！<span></span></h3>
+        <ul class="ios">
+            <li><img src="img/p1.png" alt=""></li>
+            <li><img src="img/p2.png" alt=""></li>
+            <li><img src="img/p3.png" alt=""></li>
+       </ul>                           
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">登录</a></li>
+            <li class="last1"><a href="#">注册</a></li>
+            <li class="last2 last"><a href=""></a></li>
+            <li class="last"><a href="#">TOP</a></li>
+        </ul>
+        <div>
+            <p class="one">
+                <a href="#">标准版</a>
+                <a href="#">电脑版</a>
+
+            </p>
+            <p class="two">©2013 浙B2-20080224 服务中心</p>
+        </div>
+    </footer>
+    
+</html>
